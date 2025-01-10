@@ -1,0 +1,47 @@
+.navBar {
+    height: 10%;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    align-items: center;
+    background-color: greenyellow;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.link {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(194, 255, 103);
+    transition: all 0.2s ease-in-out;
+}
+
+.button {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover, .button:hover {
+    color: white;
+    background-color: black;
+}
+
