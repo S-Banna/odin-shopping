@@ -34,7 +34,7 @@ function App() {
 			<div className="cont">
 				<NavBar toggleCart={() => toggleCart()} />
 				{cart && <Cart />}
-        <Outlet />
+				<Outlet />
 			</div>
 		);
 }
