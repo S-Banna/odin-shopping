@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
 	const [displayed, setDisplayed] = useState(0);
-	const images = useOutletContext();
+	const images = useOutletContext()[0];
 
 	useEffect(() => {
 		const interval = setInterval(() => {

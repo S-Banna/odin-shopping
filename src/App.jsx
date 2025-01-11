@@ -24,7 +24,6 @@ function App() {
 				image: itemObj.image,
 			});
 		});
-		console.log(data);
 		setImages(data.slice(6, 10));
 		return arr;
 	}
@@ -45,13 +44,13 @@ function App() {
 	}, []);
 
 	if (data === "Loading") return <Loading />;
-	if (typeof data === "string") return <h1>{data}</h1>;
+	if (typeof data === "string") return <h1>{data + " Please try refreshing, the API might be down."}</h1>;
 	else
 		return (
 			<div className={styles.cont}>
 				<NavBar toggleCart={() => toggleCart()} toggled={cart} />
 				{cart && <Cart />}
-				<Outlet context={images} />
+				<Outlet context={[images, data]} />
 			</div>
 		);
 }
