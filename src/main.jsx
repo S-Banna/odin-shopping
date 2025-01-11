@@ -6,6 +6,7 @@ import { App } from "./App.jsx";
 import { Navigate } from "react-router-dom";
 import Home from "./Home/Home.jsx";
 import Shop from "./Shop/Shop.jsx";
+import ErrorBoundary from "./ErrorBoundary/ErrorBoundary.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
 				element: <Shop />,
 			},
 		],
+		errorElement: <ErrorBoundary /> 
 	},
 ]);
 
