@@ -1,4 +1,5 @@
 import styles from "./Cart.module.css";
+import { Link } from "react-router-dom";
 
 export default function Cart({ data }) {
     let total = 0;
@@ -21,6 +22,7 @@ export default function Cart({ data }) {
                         )
                     })}
                     <p>{"Total: " + total + "$"}</p>
+                    <Link className={styles.link} to="/checkout">Checkout</Link>
                 </div>
             </div>
         </div>

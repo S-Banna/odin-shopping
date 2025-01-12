@@ -46,3 +46,20 @@
     margin: 0;
     font-size: 13px;
 }
+
+.link {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: white;
+    background-color: black;
+}

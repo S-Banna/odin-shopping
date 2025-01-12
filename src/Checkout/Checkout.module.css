@@ -1,0 +1,14 @@
+.cont {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.cont * {
+    margin: 0;
+    padding: 0;
+}

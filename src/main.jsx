@@ -7,6 +7,7 @@ import { Navigate } from "react-router-dom";
 import Home from "./Home/Home.jsx";
 import Shop from "./Shop/Shop.jsx";
 import ErrorBoundary from "./ErrorBoundary/ErrorBoundary.jsx";
+import Checkout from "./Checkout/Checkout.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
 				element: <Shop />,
 			},
 		],
-		errorElement: <ErrorBoundary /> 
+		errorElement: <ErrorBoundary />,
+	},
+	{
+		path: "/checkout",
+		element: <Checkout />,
 	},
 ]);
 
