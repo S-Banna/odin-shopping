@@ -1,4 +1,4 @@
-import styles from "./home.module.css";
+import styles from "./Home.module.css";
 import { Link, useOutletContext } from "react-router-dom";
 import { useState, useEffect } from "react";
 
