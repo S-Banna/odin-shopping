@@ -1,1 +1,1 @@
-react + vite template fork
+fake store project from theodinproject.com
