@@ -1,5 +1,13 @@
-export default function Cart() {
+import styles from "./Cart.module.css";
+
+export default function Cart({ data }) {
     return (
-        <h3>PlaceHolder cart</h3>
+        <div className={styles.mainCont}>
+            <div className={styles.borderWrapper}>
+                <div className={styles.itemCont}>
+                    placeholder
+                </div>
+            </div>
+        </div>
     )
 }
