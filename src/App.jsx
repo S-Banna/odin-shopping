@@ -74,7 +74,7 @@ function App() {
 		return (
 			<div className={styles.cont}>
 				<NavBar toggleCart={() => toggleCart()} toggled={cart} />
-				{cart && <Cart />}
+				{cart && <Cart data={data}/>}
 				<Outlet context={[images, data, handleAdd, handleRemove]} />
 			</div>
 		);
